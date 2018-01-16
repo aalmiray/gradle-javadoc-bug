@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+javadoc {
+    options.overview = file('src/main/javadoc/overview.html')
+    options.docFilesSubDirs = true
+    // doLast {
+    //     copy {
+    //         from file('src/main/javadoc')
+    //         into javadoc.destinationDir
+    //         include '**/doc-files/*'
+    //     }
+    // }
+}
